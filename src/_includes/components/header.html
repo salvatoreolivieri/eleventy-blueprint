@@ -1,9 +1,27 @@
 <header>
   <nav>
     <ul class="header">
-      <li><a class="header-link" href="/">Home</a></li>
-      <li><a class="header-link" href="/about">About</a></li>
-      <li><a class="header-link" href="/contact">Contact</a></li>
+      <li>
+        <a
+          class="header-link {% if page.url == '/' %} active-link {% endif %}"
+          href="/"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          class="header-link {% if page.url == '/about/' %} active-link {% endif %}"
+          href="/about"
+          >About</a
+        >
+      </li>
+      <li>
+        <a
+          class="header-link {% if page.url == '/contact/' %} active-link {% endif %}"
+          href="/contact"
+          >Contact</a
+        >
+      </li>
     </ul>
   </nav>
 </header>
