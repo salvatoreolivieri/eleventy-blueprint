@@ -1,0 +1,99 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(21, 19, 19, 1) 38%,
+    rgba(46, 61, 73, 1) 76%,
+    rgba(61, 90, 111, 1) 100%
+  ); */
+
+  background: #010101;
+  background: -webkit-linear-gradient(left, #010101, #121e2d);
+  background: -moz-linear-gradient(left, #010101, #121e2d);
+  background: linear-gradient(to right, #010101, #121e2d);
+
+  color: #f5f4f5;
+
+  font-family: "Lucida Console", Monaco, monospace;
+  letter-spacing: -0.025rem;
+}
+
+/* Layout */
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Tipography */
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+/* Links*/
+a {
+  color: #f5f4f5;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 20px;
+  padding-left: 0px;
+  gap: 25px;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Footer */
+.footer {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Contact Page */
+.contact-page {
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 769px) {
+  .container {
+    max-width: 38rem;
+    margin: 0 auto;
+  }
+}
